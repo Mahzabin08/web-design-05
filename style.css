@@ -1,0 +1,235 @@
+:root{
+	--primary:yellow;
+}
+
+body{	
+font-family: 'Open Sans', sans-serif;
+	margin:0;
+	padding:0;
+}
+header{
+	background-color: #2a3da9;
+	color: white;
+}
+.container{
+	width: 1200px;
+	margin: auto;
+}
+.flex{
+display: flex;
+}
+.logo{
+flex-basis: 30%;
+}
+nav{
+flex-basis: 70%;		
+}
+nav ul{
+display: flex;
+justify-content: end;
+list-style: none;	
+}
+header nav a{
+color: white;
+text-decoration: none;
+font-size: 20px;
+padding: 15px;
+display: block;
+}
+header nav a:hover{
+color: var(--primary)
+}
+header .logo a{
+font-family: 'Lobster', cursive;	
+color: white;
+text-decoration: none;
+font-size: large;	
+}
+.banner-section{
+	
+padding: 50px
+}
+.banner-section img{
+/*height: 470px;*/
+max-width: 100%;
+object-fit: cover;
+border-radius: 15px;
+
+}
+.banner{
+	box-shadow: 9px 12px 30px 0px #0d26b3;
+	
+}
+.shape1{
+width: auto;
+position: fixed;
+bottom: 50%;
+left: 10%;
+animation-name: star2;
+animation-duration: 10s;
+animation-direction: alternate-reverse;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+}
+.shape2{
+width: auto;
+position: fixed;
+right: 4%;
+top: 16%;
+animation-name: shape2;
+animation-duration: 10s;
+animation-direction: alternate-reverse;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+}
+@keyframes shape2{
+	from{
+		transform: scale(1) rotate(0deg);
+	}
+	to{
+		transform: scale(2) rotate(160deg);
+	}
+}
+.star1{
+width: auto;
+position: fixed;
+top: 22%;
+left: 15%;
+animation-name: star2;
+animation-duration: 5s;
+animation-direction: alternate-reverse;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+}
+.star2{
+width: auto;
+position: fixed;
+bottom: 40%;
+right: 16%;
+animation-name: star2;
+animation-duration: 5s;
+animation-direction: alternate-reverse;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+}
+@keyframes star2{
+	from{
+		transform: rotate(0) translate(0, 0);
+	}
+	to{
+		transform: rotate(170deg) translate(30px, 10px);
+	}
+}
+.star3{
+width: auto;
+position: fixed;
+bottom: 24%;
+right: 90%;
+animation-name: star2;
+animation-duration: 5s;
+animation-direction: alternate-reverse;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+}
+.star4{
+width: auto;
+position: fixed;
+bottom: 22%;
+right: 5%;
+animation-name: star2;
+animation-duration: 5s;
+animation-direction: alternate-reverse;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+}
+.shape3{
+width: auto;
+position: fixed;
+bottom: 52%;
+right: 7%;
+animation-name: star2;
+animation-duration: 10s;
+animation-direction: alternate-reverse;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+}
+.shape4{
+width: auto;
+position: fixed;
+bottom: 35%;
+left: 3%;
+animation-name: shape2;
+animation-duration: 10s;
+animation-direction: alternate-reverse;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+}
+.feature-section{
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+.feature{
+	padding: 30px;
+	text-align: center;
+	margin:15px;
+	border-radius: 10px;
+}
+.feature h2{
+font-family: 'Lobster', cursive;
+font-size: 50px;
+margin: 0;
+}
+.feature p{
+font-size: 30px;
+margin: 0;
+padding-top: 20px;
+}
+.color1{background-color: #334ddb;}
+.color2{background-color: #5f74e9;}
+.color3{background-color: #949fd9;}
+
+
+
+.aboutme-section{
+	padding-bottom: 40px;
+	padding-bottom:40px;
+}
+.aboutme{
+	flex-basis: 60%;
+	padding: 30px;
+}
+.aboutme h2{
+	 font-size: 60px;margin: 0;}
+.aboutme span{
+	font-family: 'Lobster', cursive;
+    color: #2a3da9;
+    text-transform: capitalize;
+}
+.aboutme p{
+    font-size: 27px;
+    font-weight: 200;
+}
+
+
+.mypicture{
+	flex-basis: 40%;
+	padding:30px;
+}
+.mypicture img{
+	object-position: center;
+    object-fit: cover;
+    width: 400px;
+    border-radius: 50%;
+    height: 400px;
+	box-shadow: 12px 11px 40px 0px #0d26b3;
+	box-shadow: 15px;
+}
+.video-section{
+	padding-top: 100px;
+	padding-bottom: 100px;
+	background: #5f74e9;
+}
+
+iframe{
+	border-radius: 15px;
+}
